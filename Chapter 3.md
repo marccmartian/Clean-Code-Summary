@@ -142,7 +142,7 @@ El objetivo es que el código se lea como un texto cualquiera, de arriba hacia a
 Por su naturaleza una instrucción Switch hace varias cosas y es complicado tener de tamaño reducido esta instrucción, lo que se recomienda es incluirla en una clase y no repetirlas.
 Pero es tolerable si aparece solo una vez en el código.
 
-ejemplo 3.4:
+ejemplo 3.4: Payroll.java
 Esta función es de gran tamaño y cuando se añaden otros tipos de 'empleados' aumenta más y hace más de una cosa
 
 ```
@@ -160,10 +160,10 @@ throws InvalidEmployeeType {
   }
 ```
 
-La solución es ocultar la instrucción switch en una 'factoria' abstracta e impedir que nadie la vea.
-La factoria usa la instruccion switch para crear las instancias de los derivados de Empleado y las disintas funciones (`calculatePay`, `isPayDay`, `deliverPay`) y se pasan de forma polimórfica a través de la interfaz `Employee`
+La solución es ocultar la instrucción switch en una 'abstract factory' e impedir que nadie la vea.
+La factoria usará la instrucción switch para crear las instancias apropieadas de los derivados de 'Employee' y las disintas funciones (`calculatePay`, `isPayDay`, `deliverPay`) y se pasan de forma polimórfica a través de la interfaz `Employee`
 
-Ejemplo 3.5
+Ejemplo 3.5: Employee and factory
 
 ```
 public abstract class Employee {
