@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\marcc\\.nuget\\packages\\": {}
+    "C:\\Users\\fbuen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcc\\source\\repos\\SwitchCleanCode2\\SwitchCleanCode2\\SwitchCleanCode2.csproj",
+      "projectUniqueName": "C:\\Users\\fbuen\\Development\\GIT\\Clean-Code-Summary\\SwitchCleanCode2\\SwitchCleanCode2\\SwitchCleanCode2.csproj",
       "projectName": "SwitchCleanCode2",
-      "projectPath": "C:\\Users\\marcc\\source\\repos\\SwitchCleanCode2\\SwitchCleanCode2\\SwitchCleanCode2.csproj",
-      "packagesPath": "C:\\Users\\marcc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcc\\source\\repos\\SwitchCleanCode2\\SwitchCleanCode2\\obj\\",
+      "projectPath": "C:\\Users\\fbuen\\Development\\GIT\\Clean-Code-Summary\\SwitchCleanCode2\\SwitchCleanCode2\\SwitchCleanCode2.csproj",
+      "packagesPath": "C:\\Users\\fbuen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fbuen\\Development\\GIT\\Clean-Code-Summary\\SwitchCleanCode2\\SwitchCleanCode2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marcc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fbuen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

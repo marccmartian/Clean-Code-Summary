@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace SwitchCleanCode2
+namespace SwitchCleanCode2.Entity
 {
-    class CommissionedEmployee : Employee
+    public class CommissionedEmployee : Employee
     {
-        public CommissionedEmployee(string type) : base(type) { }
-
         public override double CalculatePay()
         {
             return 100.51;
@@ -18,7 +14,7 @@ namespace SwitchCleanCode2
             Console.WriteLine("Comissioned pay sucessfull");
         }
 
-        public override String IsPayDay()
+        public override string IsPayDay()
         {
             return "Primer fin de semana";
         }       

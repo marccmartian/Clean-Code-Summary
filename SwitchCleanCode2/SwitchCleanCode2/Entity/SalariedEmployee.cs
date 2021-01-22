@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace SwitchCleanCode2
+namespace SwitchCleanCode2.Entity
 {
-    class SalariedEmployee : Employee
+    public class SalariedEmployee : Employee
     {
-        public SalariedEmployee(string type) : base(type) { }
-
         public override double CalculatePay()
         {
             return 300.53;
@@ -18,7 +14,7 @@ namespace SwitchCleanCode2
             Console.WriteLine("Salaried pay sucessfull");
         }
 
-        public override String IsPayDay()
+        public override string IsPayDay()
         {
             return "Fin de mes";
         }
