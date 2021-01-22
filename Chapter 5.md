@@ -1,6 +1,6 @@
-# CLEAN CODE: CAPÍTULO 5 - FORMTATO
+# CLEAN CODE: CAPÍTULO 5 - FORMATO
 
-El codigo debe de sorprender, estar en orden, causar una buena inpresión, no debe ser como toda una masa amorfa.
+El código debe de sorprender, estar en orden, causar una buena inpresión, no debe ser como toda una masa amorfa.
 
 ## 👉 Formato Vertical:
 
@@ -41,8 +41,8 @@ La anchura de las líneas de código deben estar entre los 80 y 120 caracteres, 
   - el espacio en blanco para acentuar la presedencia de operadores.
 
 - Sangrado:
-  En un archivo de codigo hay información, por ejemplo de las clases, sus metodos, los bloques de los metodos, los bloques de los bloques, etc. es decir hay ua jerarquia de código.
-  Para que esta jerarquia sea visible y dar mas legibilidad, se sangra las lineas de código; y se recomienda no romper esta regla por mas pequeña que sea la línea de codigo (if, while).
+  En un archivo de código hay información, por ejemplo de las clases, sus metodos, los bloques de los metodos, los bloques de los bloques, etc. es decir hay ua jerarquia de código.
+  Para que esta jerarquia sea visible y dar mas legibilidad, se sangra las lineas de código; y se recomienda no romper esta regla por mas pequeña que sea la línea de código (if, while).
 
 - Reglas de equipo:
   Cualquier equipo de desarrollo debería tener unas reglas convenientemente consensuadas. Todos deben seguir estas reglas (el equipo manda). El estilo y formato debe ser siempre el mismo ya que el código es compartido. Esto garantiza que el software tenga un estilo coherente.

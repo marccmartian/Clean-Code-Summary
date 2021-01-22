@@ -1,0 +1,13 @@
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\bin\Debug\netcoreapp3.1\SwitchCleanCode2.exe
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\bin\Debug\netcoreapp3.1\SwitchCleanCode2.deps.json
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\bin\Debug\netcoreapp3.1\SwitchCleanCode2.runtimeconfig.json
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\bin\Debug\netcoreapp3.1\SwitchCleanCode2.runtimeconfig.dev.json
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\bin\Debug\netcoreapp3.1\SwitchCleanCode2.dll
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\bin\Debug\netcoreapp3.1\SwitchCleanCode2.pdb
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\obj\Debug\netcoreapp3.1\SwitchCleanCode2.csprojAssemblyReference.cache
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\obj\Debug\netcoreapp3.1\SwitchCleanCode2.AssemblyInfoInputs.cache
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\obj\Debug\netcoreapp3.1\SwitchCleanCode2.AssemblyInfo.cs
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\obj\Debug\netcoreapp3.1\SwitchCleanCode2.csproj.CoreCompileInputs.cache
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\obj\Debug\netcoreapp3.1\SwitchCleanCode2.dll
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\obj\Debug\netcoreapp3.1\SwitchCleanCode2.pdb
+C:\Users\marcc\source\repos\SwitchCleanCode2\SwitchCleanCode2\obj\Debug\netcoreapp3.1\SwitchCleanCode2.genruntimeconfig.cache
