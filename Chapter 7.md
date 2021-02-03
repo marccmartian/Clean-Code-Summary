@@ -120,7 +120,7 @@ Una vez definido el ambito con la estructura `try-catch` se puede usar TDD para 
   En los errores incluir información que nos dé contexto de dónde se ha producido el fallo.
 
 - ### Definir clases de Excepción de acuerdo a las necesidades del invocador.
-  Al definir clases de excepción en una aplicación debemos hacerlo enfocándonos en como se capturan. No tanto por su originen (si provienen de uno u otro componente) o por su tipo (fallos de dispositivo, de la red, errores de programción) de excepción.
+  Al definir clases de excepción en una aplicación debemos hacerlo enfocándonos en como se capturan. No tanto por su origen (si provienen de uno u otro componente) o por su tipo (fallos de dispositivo, de la red, errores de programción) de excepción.
 
 Ejemplo: esta clasificaión de excepciones abarca todas las excepciones que las invocaciones pueden generar
 

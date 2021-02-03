@@ -1,6 +1,6 @@
 # CLEAN CODE: CAPÍTULO 9 - PRUEBAS DE UNIDAD
 
-Antiguamente las pruebas era codigo desechable, pero ahora ha evolucionado mucho el desarrollo guiado por pruebas, los moviemientos Agile y TDD son los propulsores de las pruebas de unidad automatizadas.
+Antiguamente las pruebas era código desechable, pero ahora ha evolucionado mucho el desarrollo guiado por pruebas, los moviemientos Agile y TDD son los propulsores de las pruebas de unidad automatizadas.
 
 ## 👉 Las tres leyes del TDD (Test-driven development)
 
@@ -12,7 +12,7 @@ Esto nos permitirá tener cientos de pruebas tras varios días y semanas de desa
 
 ## 👉 Mantener las Pruebas Limpias
 
-Las pruebas tienen que mantener el mismo estandar de Clean Code, es decir nombre de variables adecuados, las funciones de prueba tienen que ser breves y descriptivas, etc. Cuando el codigo evoluciona, las pruebas también, y cuanto menos limpias sean es un gran problema, pues es más dificil cambiarlas.
+Las pruebas tienen que mantener el mismo estandar de Clean Code, es decir nombre de variables adecuados, las funciones de prueba tienen que ser breves y descriptivas, etc. Cuando el codigo evoluciona, las pruebas también, y cuanto menos limpias sean es un gran problema, pues es más difícil cambiarlas.
 
 El efecto de esto puede ser en desechar completamente las pruebas, resultando un código de producción enmarañado y defectuoso. Clientes insatisfechos y perdida de tiempo. La moraleja; El código de pruebas es tan importante como el de producción.
 
@@ -23,7 +23,7 @@ El efecto de esto puede ser en desechar completamente las pruebas, resultando un
 ## 👉 Pruebas Limpias
 
 ¿Que hace que una prueba se limpia? tres cosas: legilibilidad, legibilidad y legibilidad. Es decir que la legibilidad es mas importante en las pruebas que en el código de producción en sí.
-Legibilidad: claridad, simplicidad y densidad de expresión. una prueba debe decir mucho con el menro numero de expresiones posible.
+Legibilidad: claridad, simplicidad y densidad de expresión. una prueba debe decir mucho con el menor número de expresiones posible.
 
 Las pruebas deden de cumplir con el patron `Build-Operate-Check` (AAA - Arrange, act, assert), primero crear datos de prueba, segundo operar en dichos datos y la tercera comprueba que la operación devuelva los resultados esperados.
 

@@ -44,7 +44,7 @@ public class Version {
 }
 ```
 
-Entonces la ragla es que los sistemas deben estar formados por muchas clases reducidas, no por algunas de gran tamaño; pues cada clase reducida encapsula una única responsabilidad, tiene un solo motivo para cambiar y colabora con algunas otras para obtener los comportamientos deseados del sistema.
+Entonces la regla es que los sistemas deben estar formados por muchas clases reducidas, no por algunas de gran tamaño; pues cada clase reducida encapsula una única responsabilidad, tiene un solo motivo para cambiar y colabora con algunas otras para obtener los comportamientos deseados del sistema.
 
 ### **Cohesión**
 

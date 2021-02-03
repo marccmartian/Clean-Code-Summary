@@ -6,7 +6,7 @@ El nombre debe reflejar el porque existe, que hace y como se usa.
 
 ejemplo 1:
 
-```
+```java
 int d; // tiempo transcurrido en días (incorrecto)
 
 int elapsedTimeInDays;      (correcto)
@@ -19,7 +19,7 @@ ejemplo 2:
 
 Las variables en este codigo no son entendibles
 
-```
+```java
 public List<int[]> getThem() {
   List<int[]> list1 = new ArrayList<int[]>();
   for (int[] x : theList)
@@ -31,7 +31,7 @@ public List<int[]> getThem() {
 
 Solo cambiando el nombre de las variables se vuelve mas entendible
 
-```
+```java
 public List<int[]> getFlaggedCells() {
   List<int[]> flaggedCells = new ArrayList<int[]>();
   for (int[] cell : gameBoard)
@@ -56,7 +56,7 @@ Hay nombres que conotan lo mismo pero para distinguirlos, hay que hacerlo de tal
 ejemplo:
 `a1` y `a2` son arrays, el codigo funciona pero sus nombres no tienen sentido, la funcion se lee mejor si se usara por ejemplo `source` y `destination` como argumentos
 
-```
+```java
 public static void copyChars(char a1[], char a2[]) {
   for (int i = 0; i < a1.length; i++) {
     a2[i] = a1[i];
@@ -70,7 +70,7 @@ ejemplo:
 ejemplo:
 Algo a evitar es tratar de hacer distinciones a nombres agregando solo una letra o palabra.
 
-```
+```java
 getActiveAccount();
 getActiveAccounts();
 getActiveAccountInfo();
@@ -85,7 +85,7 @@ En algunos desarrollos se usan nombres que son la cambinacion de varias palabras
 ejemplo:
 aqui `genymdhms`; `gen` hace referencia a fecha de generación, `y` al año, `m` al mes, etc.
 
-```
+```java
 class DtaRcrd102 {
   private Date genymdhms;
   private Date modymdhms;
@@ -95,7 +95,7 @@ class DtaRcrd102 {
 
 Correcto:
 
-```
+```java
 class Customer {
   private Date generationTimestamp;
   private Date modificationTimestamp;;
@@ -112,7 +112,7 @@ ejemplo:
 En este codigo es imposibe saber que el numero 5 es una constante y es el numero de dias trabajados por semana
 que el numero 4 es el peso por dia ideal, y que s es acumulador de la suma.
 
-```
+```java
 for (int j=0; j<34; j++) {
   s += (t[j]\*4)/5;
 }
@@ -120,7 +120,7 @@ for (int j=0; j<34; j++) {
 
 Aqui estasa variables son mas entendibles y se pueden buscar sin ningun problema
 
-```
+```java
 int realDaysPerIdealDay = 4;
 const int WORK_DAYS_PER_WEEK = 5;
 int sum = 0;
@@ -135,7 +135,7 @@ for (int j=0; j < NUMBER_OF_TASKS; j++) {
 
 Para denotar que una variable proviene de una clase no es necesario usar prefijos, es una practica obsoleta.
 
-```
+```java
 public class Part {
   private String m_dsc; //prefijo para indicar que es una variable de clase
   void setName(String name) {
@@ -146,7 +146,7 @@ public class Part {
 
 correcto:
 
-```
+```java
 public class Part {
   String description;
   void setDescription(String description) {
@@ -174,7 +174,7 @@ Los metodos de acceso, de modificación y los predicados deben usar su prefijo `
 
 por ejemplo:
 
-```
+```java
 string name = employee.getName();
 customer.setName("mike");
 if (paycheck.isPosted())...
@@ -192,7 +192,7 @@ El contexto es muy util pues te dice de donde proviene una variable.
 ejemplo:
 La funcion es extensa y las variables estan por todas partes
 
-```
+```java
 private void printGuessStatistics(char candidate, int count) {
   String number;
   String verb;
@@ -220,7 +220,7 @@ private void printGuessStatistics(char candidate, int count) {
 Con una clase se puede dividir este metodo en varias partes mas pequeñas, las tres variables pasarian a ser campos de la clase.
 De esa manera el contexto de esas variables se vuelve mas obvio
 
-```
+```java
 public class GuessStatisticsMessage {
   private String number;
   private String verb;
@@ -264,6 +264,6 @@ public class GuessStatisticsMessage {
 }
 ```
 
-## 👉 Conclusion:
+## 👉 Conclusión:
 
 Elegir bien nombres es algo complicado es una habiliadad mas decriptiva que tecnica, y la realidad es que, es un problema que tiene mucha gente de nuestro rubro, pero hay que ponerlo en practica pues tiene sus beneficios a corto y largo plazo.

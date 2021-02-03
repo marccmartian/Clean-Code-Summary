@@ -1,12 +1,12 @@
 # CLEAN CODE: CAPÍTULO 8 - LÍMITES
 
-En algunos casos nos vemos en la necesidad de integrar codigo externo, en otros casos dependemos de de equipos de nuestra propia empresa, se debe integrar todo eso conociendo los límites de nuestro software.
+En algunos casos nos vemos en la necesidad de integrar código externo, en otros casos dependemos de de equipos de nuestra propia empresa, se debe integrar todo eso conociendo los límites de nuestro software.
 
 ## Utilizar código de terceros
 
-Los paquetes de terceros tienen una capacidad de aplicaión global para trabajar diversos entornos o para atraer mas público. Pero por nuestra parte deseamos algo centrado en una necesidad concreta, esto puede ocasionar probleas en los limites de nuestro sistema.
+Los paquetes de terceros tienen una capacidad de aplicación global para trabajar diversos entornos o para atraer mas público. Pero por nuestra parte deseamos algo centrado en una necesidad concreta, esto puede ocasionar problemas en los limites de nuestro sistema.
 
-Por ejemplo: La clase `java.util.map`, tiene numerosas prestaciones, esto puede ser un problema; un metodo de esta clase es `clear()`, esntonces cualquier usuario del mapa puede borrarlo. Es decir solo se deben almacenar ciertos objetos concretos del mapa.
+Por ejemplo: La clase `java.util.map`, tiene numerosas prestaciones, esto puede ser un problema; un metodo de esta clase es `clear()`, entonces cualquier usuario del mapa puede borrarlo. Es decir solo se deben almacenar ciertos objetos concretos del mapa.
 
 Si nuestra app necesita un Map Sensor, se definiría asi:
 
@@ -42,11 +42,11 @@ public class Sensors {
 }
 ```
 
-Encapsulamos la interfaz Map en una clase propia para usarla solo con lo que se necesita; En el código anterior la clase `Sensors` se ha ajustado y limitado a las necesidades de la aplicación, aplica las reglas empresariales y de diseño. Entonce, si pasamos una instancia de esta clase ya no se podrá borrar o añadir objetos, solo tenemos la funcionalidad que se necesita.
+Encapsulamos la interfaz Map en una clase propia para usarla solo con lo que se necesita; En el código anterior la clase `Sensors` se ha ajustado y limitado a las necesidades de la aplicación, aplica las reglas empresariales y de diseño. Entonces, si pasamos una instancia de esta clase ya no se podrá borrar o añadir objetos, solo tenemos la funcionalidad que se necesita.
 
 ### Explorar y aprender limites
 
-En ocasiones no es facil usar librerías de terceros, se puede perder tiempo en leer su documentación y decidir como usarla. Aprender el código de terceros e integrarlo al mismo tiempo es difícil. En lugar de hacer eso se recomienda crear pruebas de aprendizaje, donde se invoca la API de terceros como supuesta mente se usaría en nuestra aplicaión, es decir realizar experimentos controlados y asi comprobar si se entiende, centrándose en lo que sequiere obtener de la API.
+En ocasiones no es facil usar librerías de terceros, se puede perder tiempo en leer su documentación y decidir como usarla. Aprender el código de terceros e integrarlo al mismo tiempo es difícil. En lugar de hacer eso se recomienda crear pruebas de aprendizaje, donde se invoca la API de terceros como supuestamente se usaría en nuestra aplicaión, es decir realizar experimentos controlados y asi comprobar si se entiende, centrándose en lo que sequiere obtener de la API.
 
 En java el autor recomienda aprender la libreriá `log4j` que permite a los desarrolladores de software escribir mensajes de registro, cuyo propósito es dejar constancia de una determinada transacción en tiempo de ejecución.
 

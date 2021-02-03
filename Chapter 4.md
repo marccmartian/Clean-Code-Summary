@@ -14,7 +14,7 @@ En muchos casos basta con crear una función que diga lo mismo que el comentario
 
 - Explicar La intención: es muy util cuando se porporciona la intención de una desición, por ejemplo:
 
-```
+```java
 public int compareTo(Object o) {
   if(o instanceof WikiPagePath) {
     WikiPagePath p = (WikiPagePath) o;

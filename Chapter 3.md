@@ -6,7 +6,7 @@ En el código la función es extensa, contiene código duplicado, muchas cadenas
 
 Ejemplo 3.1
 
-```
+```java
 public static String testableHtml(
   PageData pageData,
   boolean includeSuiteSetup
@@ -77,7 +77,7 @@ Con extracciones de código, algun cambio de nombre y cierta reestructuración, 
 
 Ejemplo 3.2
 
-```
+```java
 public static String renderPageWithSetupsAndTeardowns(
   PageData pageData, boolean isSuite
 ) throws Exception {
@@ -104,7 +104,7 @@ Por lo tanto, el codigo del ejemplo 3.2 se puede reducir aún más:
 
 Ejemplo 3.3
 
-```
+```java
 public static String renderPageWithSetupsAndTeardowns(
   PageData pageData, boolean isSuite) throws Exception {
     if (isTestPage(pageData))
@@ -145,7 +145,7 @@ Pero es tolerable si aparece solo una vez en el código.
 ejemplo 3.4: Payroll.java
 Esta función es de gran tamaño y cuando se añaden otros tipos de 'empleados' aumenta más y hace más de una cosa
 
-```
+```java
 public Money calculatePay(Employee e)
 throws InvalidEmployeeType {
   switch (e.type) {
@@ -165,7 +165,7 @@ La factoria usará la instrucción switch para crear las instancias apropieadas 
 
 Ejemplo 3.5: Employee and factory
 
-```
+```java
 public abstract class Employee {
   public abstract boolean isPayday();
   public abstract Money calculatePay();
@@ -245,7 +245,7 @@ Ejemplo 3.6
 
 Esta función compara el `username` con `password` devuelve `true` si coinciden y `false` si hay problema, pero tiene un efecto secundario.
 
-```
+```java
 public class UserValidator {
   private Cryptographer cryptographer;
 
@@ -278,7 +278,7 @@ Es complicado entender si la función `set` es un verbo o un adjetivo, o sea; El
 
 La solución es separar el comando de la consulta para evitar ambigüedad:
 
-```
+```java
 if(attributeExists("username")){
   setAtribute("username", "unclebob")
 }
@@ -292,7 +292,7 @@ Devolver códigos de error es incumplir la regla anterior (separación de comand
 
 Aquí no padece de la confusión de verbo, adjetivo, el problema es cuando se quiere devolver un código de error, pues debes procesar ese error de forma inmediata y eso genera estructuras anidadas:
 
-```
+```java
 if (deletePage(page) == E_OK) {
   if (registry.deleteReference(page.name) == E_OK) {
     if (configKeys.deleteKey(page.name.makeKey()) == E_OK){
@@ -310,7 +310,7 @@ if (deletePage(page) == E_OK) {
 
 Pero si se usan excepciones en vez de códigos de error, el código de procesamiento se puede separar del código de error y se simplifica.
 
-```
+```java
 try {
   deletePage(page);
   registry.deleteReference(page.name);
@@ -325,7 +325,7 @@ catch (Exception e) {
 
 Se recomienda extraer estos bloques en funciones individuales, porque estos bloques Try/Catch confunden la estructura del código y mezcla el procesamiento de errores con el procesamiento normal. Por ejemplo:
 
-```
+```java
 public void delete(Page page) {
   try {
     deletePageAndAllReferences(page);
@@ -356,7 +356,7 @@ Esa repetición se remedia gracias al metodo `include` del ejemplo 3.7, donde el
 
 Ejemplo 3.7
 
-```
+```java
 package fitnesse.html;
 
 import fitnesse.responders.run.SuiteResponder;

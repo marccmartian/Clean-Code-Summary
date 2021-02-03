@@ -17,7 +17,7 @@ public class Point {
 ```
 
 - Ejemplo 6.2 (Abstract Point): NO muestra la implementación de los datos.
-  No se sabe si la implementacion esta en cordenadas rectagulares o polares o ninguna, pero representa una estructura de datos.
+  No se sabe si la implementación esta en coordenadas rectagulares o polares o ninguna, pero representa una estructura de datos.
 
 ```java
 public interface Point {
@@ -96,6 +96,7 @@ public class Square implements Shape {
     return side*side;
   }
 }
+
 public class Rectangle implements Shape {
   private Point topLeft;
   private double height;
@@ -189,14 +190,10 @@ public class Servicio
   {
     helper.RegistrarInicio();
   }
-
-  public void Ejecutar(){
-    this.validar();
-  }
 }
 ```
 
-Otro ejemplo, aqui incumple esta ley pues una funcion llama al valor devuelto de otro.
+Otro ejemplo, aqui incumple esta ley pues una función llama al valor devuelto de otro.
 
 ```java
 final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
@@ -257,9 +254,9 @@ public class Address {
 ### Registro Activo (Active record)
 
 Son una forma especial de OTD, son estructuras de datos con variables públicas (o de acceso por "bean"), pero tienen metodos de navegación como `save` y `find`, son traducciones directas de bases de datos.
-Muchos procesan las estructuras de datos como si fueran objetos y les añaden metodos de reglas empresariales, esto creo un híbrido entre una estructura de datos y un objeto.
+Muchos procesan las estructuras de datos como si fueran objetos y les añaden metodos de reglas empresariales, esto crea un híbrido entre una estructura de datos y un objeto.
 
-La solucion es sonsiderar las el registro activo una estructura de datos y crear objetos independientes que contengan las reglas empresariales y que oculten sus datos internos.
+La solución es considerar el registro activo una estructura de datos y crear objetos independientes que contengan las reglas empresariales y que oculten sus datos internos.
 
 ## 👉 Conclusión
 
